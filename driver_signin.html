@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+
+input[type=email], input[type=password], input[type=text] 
+{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color:#1B2631;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+/*.cancelbtn {
+    width: auto;
+    padding: 5px 9px;
+    background-color: white;
+}*/
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+a{
+	color:white;
+}
+</style>
+<body>
+
+<img src='image/1.jpg' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;-webkit-filter: blur(0px);filter: blur(0px);'>
+<form action="Driver_Signin.php" method="post">
+  <div class="imgcontainer">
+ 
+  </div>
+	
+	
+	<span style="margin-left:19.3em;">
+    <label><b><font size="5" color="black">Email-Id</font></b></label>
+	<span style="margin-left: 1.8em;">
+    <input type="email" placeholder="Enter Email-Id" name="mail" >
+    <br>
+	<span style="margin-left:19.3em;">
+    <label><b><font size="5" color="black">Password</font></b></label>
+	<span style="margin-left: 1.3em;">
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+    <br>
+	<span style="margin-left:19.3em;">
+    <label><b><font size="5" color="black">Vehicle-No</font></b></label>
+	<span style="margin-left: 0.8em;">
+    <input type="text" placeholder="Enter Number" name="numb" style="width: 400px;">
+    <br>
+	<label><b><font size="5" color="black">Vehicle-Type</font></b></label>
+        <select type="text" placeholder="Enter Vehicle-Type" name="vtype" id="vtype">
+          <option value="Micro"<?php setSelected( "vtype", "Micro" ) ?>Micro</option>
+          <option value="Mini"<?php setSelected( "vtype", "Mini" ) ?>Mini</option>
+          <option value="Sedan"<?php setSelected( "vtype", "Sedan" ) ?>Sedan</option>
+          <option value="SUV"<?php setSelected( "vtype", "SUV" ) ?>SUV</option>
+        </select>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<span style="margin-left: 27.3em;">
+	<button type="submit"><a href="Driver_Signin.php" style="font-size: 19px;text-decoration:none;" ><font size="4">SignIn</font></button>
+    <br>
+    </div>
+	</form>
+	<span style="margin-left:27.3em;">
+    <br>
+</body>
+</html>
